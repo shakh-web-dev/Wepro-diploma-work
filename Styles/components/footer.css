@@ -1,0 +1,149 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+footer {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: -100px;
+    margin: 100px auto;
+    width: 100%;
+    height: 232px;
+    background-color: #F0F0F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.foot_container {
+    margin: 0 auto;
+    width: 1170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.send_email {
+    margin-top: -50px;
+    width: 300px;
+    height: 100px;
+}
+
+.send_email p {
+    width: 205px;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+.send_email_input {
+    margin-top: 35px;
+}
+
+.send_email_input form {
+    display: flex;
+    align-items: center;
+}
+
+.send_email_input form input {
+    width: 190px;
+    height: 33px;
+    border: none;
+    padding-left: 10px;
+    outline: none;
+    transition: .2s;
+}
+
+.send_email_input form input::placeholder {
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    color: #C4C4C4;
+}
+
+.send_email_input form input:focus {
+    box-shadow: 0px 0px 15px rgba(50, 50, 50, 0.5);
+}
+
+.send_email_input form button {
+    width: 110px;
+    height: 33px;
+    background-color: #1C62CD;
+    color: #FFFFFF;
+    border: none;
+    font-family: SF Pro Display;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.15em;
+    cursor: pointer;
+}
+
+.info_about_site {
+    width: 315px;
+    height: auto;
+    margin-top: -35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info_about_site .left_side {
+    width: fit-content;
+    height: 105px;
+}
+
+.info_about_site .right_side {
+    width: fit-content;
+    height: 105px;
+}
+
+.info_about_site .left_side p,
+.info_about_site .right_side p {
+    width: fit-content;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.foot_container .links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 210px;
+    height: 30px;
+}
+
+.foot_container .links .link {
+    width: 30px;
+    height: 30px;
+}
+
+.links .link:nth-child(1) {
+    background: url(/svg/instagram.svg) no-repeat center;
+    background-size: contain;
+}
+
+.links .link:nth-child(2) {
+    background: url(/svg/vk.svg) no-repeat center;
+    background-size: contain;
+}
+
+.links .link:nth-child(3) {
+    background: url(/svg/facebook.svg) no-repeat center;
+    background-size: contain;
+}
+
+.links .link:nth-child(4) {
+    background: url(/svg/youtube.svg) no-repeat center;
+    background-size: contain;
+}

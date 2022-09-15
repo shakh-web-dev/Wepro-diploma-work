@@ -1,0 +1,154 @@
+@media screen and (max-width: 395px) {
+    .banner_block {
+        display: block;
+        width: 375px;
+        height: auto;
+    }
+
+    .slide_banner {
+        margin-top: -50px;
+        width: 375px;
+        height: 200px;
+    }
+
+    .sale_product {
+        margin: 30px auto;
+        width: 300px;
+    }
+
+    .search_bl {
+        width: 370px;
+        /* background-color: red; */
+    }
+
+    .tabs_search {
+        width: 560px;
+        overflow-x: scroll;
+        overflow: scroll;
+        /* background-color: red; */
+    }
+
+    .search_tab {
+        width: fit-content;
+        /* background-color: red; */
+        /* display: none; */
+    }
+
+    .active_tab {
+        width: fit-content;
+        height: 35px;
+        background-color: transparent;
+        border-radius: 0%;
+        border-bottom: 3px solid #1C62CD;
+    }
+
+    .search_input {
+        width: 365px;
+    }
+
+    .search_input input {
+        width: 350px;
+    }
+
+    .search_input .search_btn {
+        width: 50px;
+        background: url(/svg/search_icon.svg) no-repeat center;
+        font-size: 0;
+        background-color: #F0F0F4;
+    }
+
+    .categories {
+        width: 375px;
+    }
+
+    .popular_products,
+    .recommendation {
+        width: 370px;
+    }
+
+    .popular_products h2,
+    .recommendation h2 {
+        margin: 0 auto;
+    }
+
+    .products_tab,
+    .recom_products {
+        width: 365px;
+        gap: 30px;
+        overflow-x: scroll;
+    }
+
+    .pr_active_tab,
+    .rec_active_tab {
+        font-weight: 600;
+    }
+
+    .popular_products_slider,
+    .recom_products_slider {
+        width: 375px;
+    }
+
+    .prd_slider,
+    .rec_slider {
+        width: 330px;
+        background-color: blue;
+    }
+
+    .sales {
+        display: none;
+    }
+
+    .mobile_sales {
+        margin: 150px auto;
+        width: 375px;
+        height: 100px;
+        background-color: red;
+    }
+
+    .mobile_sales .sale_text {
+        width: 210px;
+        margin: 0 auto;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 18px;
+        text-align: center;
+    }
+
+    .show_more_btn {
+        margin-top: 70px;
+    }
+
+    .open_mobile_menu {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 320px;
+        height: 100%;
+        background-color: #F0F0F4;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+        transition: .3s ease;
+        z-index: 50;
+    }
+
+    .bg_mobile_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        display: none;
+        opacity: 0;
+        z-index: 100;
+    }
+
+    .bg_mobile_menu.actived_bg {
+        display: block;
+        transition: none;
+    }
+
+    .open_mobile_menu.opened {
+        left: 0;
+    }
+}

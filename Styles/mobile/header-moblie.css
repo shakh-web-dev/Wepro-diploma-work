@@ -1,0 +1,55 @@
+@media screen and (max-width: 401px) {
+    .box_container {
+        margin-top: 10px;
+        width: 375px;
+        height: 55px;
+        /* background-color: green; */
+    }
+
+    .mobile_menu {
+        width: 33px;
+        height: 27px;
+        background: url(/svg/gamburger.svg) no-repeat center;
+        background-size: contain;
+        transition: .2s;
+    }
+
+    .mobile_menu:active {
+        width: 38px;
+        height: 32px;
+        padding: 10px;
+        border: 2px solid rgb(180, 180, 180);
+    }
+
+    .logo {
+        width: 121px;
+        height: 45px;
+        background: url(/svg/mobile-logo.svg) no-repeat center;
+        background-size: contain;
+        /* background-color: red; */
+    }
+
+    .buttons_links,
+    .addres,
+    .navigation {
+        display: none;
+    }
+
+    .mobile_navigation {
+        margin: 0 auto;
+        width: 375px;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: SF Pro Display;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: center;
+        padding: 10px;
+        background-color: #F0F0F4;
+    }
+
+}

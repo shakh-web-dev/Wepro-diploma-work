@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: local('SF Pro Display'),
+        url(../fonts/SFProDisplay/SFPRODISPLAYREGULAR.OTF);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Barlow';
+    src: local('Barlow'),
+        url(../fonts/Barlow/Barlow-Medium.ttf);
+    font-style: normal;
+    font-weight: normal;
+}

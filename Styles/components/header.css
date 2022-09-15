@@ -1,0 +1,153 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+}
+
+.box_container {
+    margin: 0 auto;
+    width: 1170px;
+    height: 115px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    color: #2F3035;
+}
+
+.buttons_links {
+    width: 480px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.buttons_links p {
+    cursor: pointer;
+}
+
+.logo {
+    width: 80px;
+    height: 76px;
+    background: url(/svg/logo.svg) no-repeat center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.addres {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.addres .loca_ic {
+    width: 30px;
+    height: 30px;
+    background: url(/svg/location.svg) no-repeat center;
+    background-size: cover;
+}
+
+.nav_buttons {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 15px;
+}
+
+.nav_buttons div {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.nav_buttons .like_butt {
+    background: url(/svg/like.svg) no-repeat center;
+    background-size: contain;
+}
+
+.nav_buttons .profile_butt {
+    background: url(/svg/profile_icon.svg) no-repeat center;
+    background-size: contain;
+}
+
+
+.nav_buttons .cart_butt {
+    background: url(/svg/cart.svg) no-repeat center;
+    background-size: contain;
+    position: relative;
+    width: 30px;
+    height: 30px;
+}
+
+.nav_buttons .cart_butt span {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #1C62CD;
+    position: absolute;
+    bottom: -5px;
+    right: -12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-family: 'SF Pro Display';
+    font-size: 12px;
+}
+
+.mobile_navigation {
+    display: none;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1170px;
+    height: 55px;
+    margin: 0 auto;
+    background-color: #F0F0F4;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #2F3035;
+}
+
+.navigation p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 55px;
+    cursor: pointer;
+}
+
+.navigation p.nav_active {
+    font-weight: 600;
+    color: #2F3035;
+    border-bottom: 3px solid #1C62CD;
+}
