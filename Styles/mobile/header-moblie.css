@@ -7,6 +7,7 @@
     }
 
     .mobile_menu {
+        display: block;
         width: 33px;
         height: 27px;
         background: url(/svg/gamburger.svg) no-repeat center;

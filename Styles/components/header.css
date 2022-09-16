@@ -21,6 +21,10 @@ header {
     color: #2F3035;
 }
 
+.mobile_menu {
+    display: none;
+}
+
 .buttons_links {
     width: 480px;
     height: auto;

@@ -1,4 +1,4 @@
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 401px) {
     .banner_block {
         display: block;
         width: 375px;
@@ -22,7 +22,7 @@
     }
 
     .tabs_search {
-        width: 560px;
+        width: 375px;
         overflow-x: scroll;
         overflow: scroll;
         /* background-color: red; */
@@ -99,15 +99,18 @@
     }
 
     .mobile_sales {
+        display: block;
         margin: 150px auto;
+        padding-top: 1px;
         width: 375px;
-        height: 100px;
-        background-color: red;
+        height: auto;
+        background-color: #1C62CD;
+        padding-bottom: 5px;
     }
 
     .mobile_sales .sale_text {
         width: 210px;
-        margin: 0 auto;
+        margin: 10px auto;
         font-family: 'SF Pro Display';
         font-style: normal;
         font-weight: 700;
@@ -116,8 +119,44 @@
         text-align: center;
     }
 
+    .sale_container {
+        margin: 10px auto;
+        width: 90%;
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .sale_container .jtsk_1,
+    .sale_container .jtsk_2 {
+        width: 90px;
+        height: 85px;
+    }
+
+    .sale_container .jtsk_1 {
+        background: url(/Img/jtsk_1.png) no-repeat center;
+        background-size: contain;
+    }
+
+    .sale_container .jtsk_2 {
+        background: url(/Img/jtsk_2.png) no-repeat center;
+        background-size: contain;
+    }
+
+    .sale_container .show_all_btn {
+        margin: 0 auto;
+        width: 142px;
+        height: 43px;
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 50px;
+        letter-spacing: 0em;
+    }
+
     .show_more_btn {
-        margin-top: 70px;
+        /* margin-top: 70px; */
     }
 
     .open_mobile_menu {

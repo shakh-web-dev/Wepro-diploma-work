@@ -30,8 +30,10 @@ let bg_mobile_menu = document.querySelector(".bg_mobile_menu")
 btnMobMenu.onclick = () => {
     opMobMenu.classList.add("opened")
     bg_mobile_menu.classList.add("actived_bg")
+    document.body.style.overflow = "hidden"
 }
 bg_mobile_menu.onclick = () => {
     opMobMenu.classList.remove("opened")
     bg_mobile_menu.classList.remove("actived_bg")
+    document.body.style.overflowY = "scroll"
 }

@@ -85,6 +85,10 @@ footer {
     cursor: pointer;
 }
 
+.mobile_info_about_site {
+    display: none;
+}
+
 .info_about_site {
     width: 315px;
     height: auto;

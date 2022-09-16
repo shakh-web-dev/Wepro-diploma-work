@@ -26,6 +26,30 @@ footer.innerHTML = `
                     <p>Новости</p>
                 </div>
             </div>
+            <div class="mobile_info_about_site">
+                <div class="top_side">Информация<span></span></div>
+                <div class="info_top">
+                    <p>О компании</p>
+                    <p>Контакты</p>
+                    <p>Акции</p>
+                    <p>Магазины</p>
+                </div>
+                <div class="bottom_side">Интернет-магазин<span></span></div>
+                <div class="info_bottom">
+                    <p>Доставка и самовывоз</p>
+                    <p>Оплата</p>
+                    <p>Возврат-обмен</p>
+                    <p>Новости</p>
+                </div>
+            </div>
+            <div class="links">
+                <a href="https://www.instagram.com" class="link"></a>
+                <a href="https://www.vk.com" class="link"></a>
+                <a href="https://www.facebook.com" class="link"></a>
+                <a href="https://www.linkedin.com" class="link"></a>
+            </div>
+        </div>
+        <div class="mobile_links">
             <div class="links">
                 <a href="https://www.instagram.com" class="link"></a>
                 <a href="https://www.vk.com" class="link"></a>
@@ -34,3 +58,15 @@ footer.innerHTML = `
             </div>
         </div>
 `
+
+let topSide = document.querySelector(".top_side"),
+    bottomSide = document.querySelector(".bottom_side")
+let infoTop = document.querySelector(".info_top"),
+    infoBottom = document.querySelector(".info_bottom")
+
+topSide.onclick = () => {
+    infoTop.classList.toggle("open_info")
+}
+bottomSide.onclick = () => {
+    infoBottom.classList.toggle("open_info")
+}

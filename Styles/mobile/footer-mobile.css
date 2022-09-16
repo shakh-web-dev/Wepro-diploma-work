@@ -1,10 +1,134 @@
-@media screen and (max-width: 395px) {
+@media screen and (max-width: 401px) {
+    footer {
+        display: block;
+    }
+
     .foot_container {
         display: block;
         width: 375px;
+        height: auto;
+        padding-top: 15px;
     }
 
     .send_email {
-        
+        margin: 0 auto;
+        width: fit-content;
     }
+
+    .send_email p {
+        width: 230px;
+        margin: 0 auto;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 15px;
+        line-height: 17px;
+        text-align: center;
+    }
+
+    .send_email_input {
+        width: fit-content;
+        margin: 25px auto;
+    }
+
+    .info_about_site {
+        display: none;
+    }
+
+    .mobile_info_about_site {
+        display: block;
+        margin: 0 auto;
+        width: 97%;
+        height: auto;
+    }
+
+    .mobile_info_about_site .top_side,
+    .mobile_info_about_site .bottom_side {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        height: 50px;
+        padding: 5px;
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 18px;
+        color: #7F7F7F;
+    }
+
+    .mobile_info_about_site .top_side {
+        border-top: 2px solid #c7c7c7;
+        border-bottom: 1px solid #c7c7c7;
+    }
+
+    .mobile_info_about_site .bottom_side {
+        border-top: 1px solid #c7c7c7;
+        border-bottom: 2px solid #c7c7c7;
+    }
+
+    .mobile_info_about_site .top_side span,
+    .mobile_info_about_site .bottom_side span {
+        width: 15px;
+        height: 15px;
+        background: url(/svg/open_down.svg) no-repeat center;
+        background-size: contain;
+        transform: rotate(180deg);
+        cursor: pointer;
+        transition: .2s;
+    }
+
+    .info_top,
+    .info_bottom {
+        margin: 0 auto;
+        width: 90%;
+        height: auto;
+        font-family: SF Pro Display;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 25px;
+        opacity: 0;
+        position: relative;
+        top: -100px;
+        z-index: -2;
+        transition: .5s ease;
+        display: none;
+    }
+
+    .info_top.open_info,
+    .info_bottom.open_info {
+        display: block;
+        opacity: 1;
+        top: 0;
+        z-index: 1000;
+    }
+
+    .foot_container .links {
+        display: none;
+    }
+
+    .mobile_links {
+        margin: 50px auto;
+        width: 100%;
+        height: 300px;
+        background-color: #FFFFFF;
+        display: flex;
+        align-items: center;
+    }
+
+    .links {
+        margin: 0 auto;
+        width: 250px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links .link {
+        width: 40px;
+        height: 40px;
+    }
+
 }
