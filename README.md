@@ -6,4 +6,4 @@ Diploma work of students of the IT school "Wepro". 💻👩‍🎓🏬
 - 👨‍💻And also there is an admin panel for adding new motorcycles and other goods.
 - ⚙️The thesis work was done on pure HTML, CSS, JS without the use of any frameworks and libraries (except for axios).
 <hr>
-<h2><a href="https://www.diploma-shx.netlify.app">Go to site<a/></h2>
+<h2><a href="https://diploma-shx.netlify.app">Go to site<a/></h2>
