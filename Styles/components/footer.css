@@ -151,3 +151,7 @@ footer {
     background: url(/svg/youtube.svg) no-repeat center;
     background-size: contain;
 }
+
+.ppp {
+    display: none;
+}

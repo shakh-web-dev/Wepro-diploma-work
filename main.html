@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="./Styles/mobile/header-moblie.css">
     <link rel="stylesheet" href="./Styles/main.css">
     <link rel="stylesheet" href="./Styles/mobile/main-mobile.css">
+    <link rel="stylesheet" href="./Styles/liked.css">
+    <link rel="stylesheet" href="./Styles/cart.css">
     <link rel="stylesheet" href="./Styles/components/footer.css">
     <link rel="stylesheet" href="./Styles/mobile/footer-mobile.css">
     <link rel="stylesheet" href="./Styles/fonts.css">
@@ -63,7 +65,7 @@
         </div>
     </section>
     <section class="categories">
-        <div class="chapter">
+        <div class="chapter ATVs">
             <div class="left_side">
                 <h2>Квадроциклы</h2>
                 <span>Подробнее &GT;</span>
@@ -72,7 +74,7 @@
                 <div class="chapter_img"></div>
             </div>
         </div>
-        <div class="chapter">
+        <div class="chapter jetSkis">
             <div class="left_side">
                 <h2>Гидроциклы</h2>
                 <span>Подробнее &GT;</span>
@@ -81,7 +83,7 @@
                 <div class="chapter_img"></div>
             </div>
         </div>
-        <div class="chapter">
+        <div class="chapter boats">
             <div class="left_side">
                 <h2>Катера</h2>
                 <span>Подробнее &GT;</span>
@@ -90,7 +92,7 @@
                 <div class="chapter_img"></div>
             </div>
         </div>
-        <div class="chapter">
+        <div class="chapter snowmobiles">
             <div class="left_side">
                 <h2>Снегоходы</h2>
                 <span>Подробнее &GT;</span>
@@ -99,7 +101,7 @@
                 <div class="chapter_img"></div>
             </div>
         </div>
-        <div class="chapter">
+        <div class="chapter allTerrainVehicles">
             <div class="left_side">
                 <h2>Вездеходы</h2>
                 <span>Подробнее &GT;</span>
@@ -108,7 +110,7 @@
                 <div class="chapter_img"></div>
             </div>
         </div>
-        <div class="chapter">
+        <div class="chapter engines">
             <div class="left_side">
                 <h2>Двигатели</h2>
                 <span>Подробнее &GT;</span>
@@ -133,7 +135,7 @@
         <div class="prd_container">
             <div class="scr-prev scr"></div>
             <div class="prd_slider">
-                <!-- <div class="popl_product">
+                <div class="popl_product">
                     <div class="like"></div>
                     <img class="popl_product_img" / src="./Img/popular_products/ryukzak.png">
                     <h3>Водонепроницаемый
@@ -165,7 +167,7 @@
                     <p>нет в наличии</p>
                     <span>Сообщить о посуплении</span>
                     <div class="add_cart"></div>
-                </div> -->
+                </div>
             </div>
             <div class="scr-next scr"></div>
         </div>
@@ -209,13 +211,30 @@
     </div>
     <footer></footer>
     <div class="open_mobile_menu"></div>
+    <div class="liked_prod">
+        <h3>Понравившиеся товары</h3>
+        <span class="exs">&times;</span>
+        <div class="Prd_lk">
+            <div class="my_lk_prod"></div>
+            <div class="my_lk_prod"></div>
+            <div class="my_lk_prod"></div>
+            <div class="my_lk_prod"></div>
+            <div class="my_lk_prod"></div>
+            <div class="my_lk_prod"></div>
+        </div>
+    </div>
+    <div class="cart_products">
+        <span class="exs">&times;</span>
+    </div>
+    <div class="bg_el"></div>
     <div class="bg_mobile_menu"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./JS/header.js"></script>
     <script src="./JS/slider.js"></script>
-    <script src="./JS/products-main.js"></script>
+    <script type="module" src="./JS/products-main.js"></script>
+    <script type="module" src="./JS/main.js"></script>
     <script src="./JS/footer.js"></script>
 </body>
 

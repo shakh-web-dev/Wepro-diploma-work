@@ -464,7 +464,7 @@
     background-size: cover;
 }
 
-.prd_slider, 
+.prd_slider,
 .rec_slider {
     margin: 0 auto;
     width: 1170px;
@@ -473,13 +473,11 @@
     align-items: center;
     gap: 20px;
     justify-content: space-between;
-    /* background-color: blue; */
 }
 
 .popl_product {
     width: 270px;
     height: 403px;
-    /* background-color: green; */
     position: relative;
     border: 1px solid #CDCDCD;
     border-radius: 3px;
@@ -662,6 +660,24 @@
     box-shadow: 0px 0px 15px rgba(0, 195, 255, 0.5);
 }
 
-.rec_slider {
+/* .rec_slider {
     background-color: red;
+} */
+
+.bg_el {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    opacity: 0;
+    z-index: 99;
+    transition: .3s ease;
+}
+
+.bg_el.active_bg_el {
+    display: block;
+    opacity: 1;
 }

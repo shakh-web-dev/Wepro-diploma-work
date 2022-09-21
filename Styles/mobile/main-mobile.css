@@ -91,7 +91,6 @@
     .prd_slider,
     .rec_slider {
         width: 330px;
-        background-color: blue;
     }
 
     .sales {
@@ -155,10 +154,6 @@
         letter-spacing: 0em;
     }
 
-    .show_more_btn {
-        /* margin-top: 70px; */
-    }
-
     .open_mobile_menu {
         position: absolute;
         top: 0;
@@ -168,7 +163,7 @@
         background-color: #F0F0F4;
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         transition: .3s ease;
-        z-index: 50;
+        z-index: 500;
     }
 
     .bg_mobile_menu {

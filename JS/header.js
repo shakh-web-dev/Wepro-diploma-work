@@ -36,3 +36,7 @@ header.innerHTML = `
 
 `
 document.body.prepend(header)
+
+// let prodsLength = document.querySelector(".cart_butt span")
+// let countProd = document.querySelectorAll(".Prd_lk .my_cr_prod")
+// prodsLength.innerHTML = countProd.length

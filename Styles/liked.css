@@ -1,0 +1,43 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.liked_prod, 
+.cart_products{
+    width: 630px;
+    height: 825px;
+    height: 95%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    transform: translate(0, 3%);
+    z-index: 100;
+    transition: .5s ease;
+}
+
+.open_wind {
+    right: 10px;
+}
+
+.exs {
+    width: fit-content;
+    font-size: 45px;
+    font-weight: 600;
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    cursor: pointer;
+}
+
+.liked_prod h3 {
+    width: fit-content;
+    margin: 10px auto;
+    font-size: 30px;
+    font-weight: 600;
+    font-family: "SF Pro Display";
+    color: #2F3035;
+}
