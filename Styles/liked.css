@@ -1,13 +1,5 @@
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-.liked_prod, 
-.cart_products{
+.liked_prod {
     width: 630px;
-    height: 825px;
     height: 95%;
     background-color: #FFFFFF;
     border-radius: 12px;
@@ -19,8 +11,32 @@
     transition: .5s ease;
 }
 
+.Prd_lk {
+    margin-left: 40px;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    overflow-y: scroll;
+    /* background-color: blue; */
+}
+
 .open_wind {
     right: 10px;
+}
+
+.Prd_lk::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Prd_lk::-webkit-scrollbar-track {
+    background: #FFFFFF;
+}
+
+.Prd_lk::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background: #d2d2d2;
 }
 
 .exs {
@@ -40,4 +56,23 @@
     font-weight: 600;
     font-family: "SF Pro Display";
     color: #2F3035;
+}
+
+.my_lk_prod {
+    width: 250px;
+    height: 350px;
+    background-color: red;
+    margin: 0 auto;
+    border-radius: 13px;
+}
+
+/* Mobile */
+@media screen and (max-width: 401px) {
+    .liked_prod {
+        width: 370px;
+    }
+
+    .my_lk_prod {
+        width: 300px;
+    }
 }

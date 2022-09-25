@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .banner_block {
     margin: 90px auto;
     width: 1170px;
@@ -680,4 +684,8 @@
 .bg_el.active_bg_el {
     display: block;
     opacity: 1;
+}
+
+.open_mobile_menu {
+    display: none;
 }

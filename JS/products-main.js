@@ -1,26 +1,35 @@
 document.addEventListener("DOMContentLoaded", () => {
-    let api = "http://localhost:3001/popularPoducts"
+    let api = "http://localhost:3001/popularProducts"
     axios.get(api)
         .then(response => {
             console.log("status:", response.status);
             console.log(response.data);
-            RenderingProducts(response.data)
+            if (response.status == 200 || response.status == 201) {
+                renderingProducts(response.data)
+            } else {
+                let ST = response.statusText = "Проблемы со связью"
+                document.querySelector(".prd_slider").innerText = ST
+            }
         })
         .catch(error => console.log(error))
 
     let displayArea = document.querySelector(".prd_slider")
-    function RenderingProducts(products) {
+    function renderingProducts(products) {
         displayArea.innerHTML = ""
         for (let item of products) {
-            displayArea.innerHTML = `
+            displayArea.innerHTML += `
             <div class="popl_product">
                 <div class="like"></div>
                 <img class="popl_product_img" / src="${item.img}">
                 <h3>${item.name}</h3>
                 <p>${item.price}</p>
+                <p class="fff_nnn"></p>
                 <div class="add_cart"></div>
             </div>
             `
+            if (item.price === "Нет в наличии") {
+                document.querySelector(".fff_nnn").innerText = "Сообщить о поступлении"
+            }
         }
     }
     let cart_arr = []
@@ -64,13 +73,13 @@ document.addEventListener("DOMContentLoaded", () => {
     let cart_prod = document.querySelector(".cart_products")
     let cart_btn = document.querySelector(".cart_butt")
     cart_btn.onclick = () => {
-        cart_prod.classList.add(".open_wind")
+        cart_prod.classList.add(".open_wind_cart")
         actBG()
     }
 
     bgEl.onclick = () => {
         liked_prod.classList.remove("open_wind")
-        cart_prod.classList.remove("open_wind")
+        cart_prod.classList.remove("open_wind_cart")
         closedBG()
     }
 })

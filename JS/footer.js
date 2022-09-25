@@ -4,9 +4,9 @@ footer.innerHTML = `
             <div class="send_email">
                 <p>Подпишитесь на нашу рассылку и узнавайте о акциях быстрее</p>
                 <div class="send_email_input">
-                    <form name="email">
+                    <form name="email" method="post">
                         <input type="email" placeholder="Введите ваш e-mail:" required name="email">
-                        <button>ОТПРАВИТЬ</button>
+                        <button class="sendBtn">ОТПРАВИТЬ</button>
                     </form>
                 </div>
             </div>
@@ -66,7 +66,6 @@ let topSide = document.querySelector(".top_side"),
 let infoTop = document.querySelector(".info_top"),
     infoBottom = document.querySelector(".info_bottom")
 let arrowSp = document.querySelectorAll(".sides span")
-console.log(arrowSp);
 
 topSide.onclick = () => {
     infoTop.classList.toggle("open_info")
@@ -84,3 +83,33 @@ bottomSide.onclick = () => {
         arrowSp[1].style = "transform: rotate(180deg);"
     }
 }
+
+let form = document.forms.email
+const sendEmails = () => {
+    let api = "http://localhost:3001/emails"
+    let randomID = (performance.now().toString(36)+Math.random().toString(36)).replace(/\./g,"")
+    form.onsubmit = (event) => {
+        event.preventDefault()
+        let email = {
+            id: randomID
+        }
+        let fm = new FormData(form)
+        fm.forEach((value, key) => {
+            email[key] = value
+        })
+        console.log(email);
+
+        // send user email in database
+        axios.post(api, email)
+            .then(answer => {
+                console.log(answer);
+                if (answer.status == 200 || answer.status == 201) {
+                    alert("Great!\nYour email has been successfully sended!")
+                } else {
+                    alert("Bad connection!\nYour email fails(((...")
+                }
+            })
+            .catch(error => console.error(error))
+    }
+}
+sendEmails()

@@ -1,0 +1,33 @@
+.cart_products {
+    width: 630px;
+    height: 95%;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    position: absolute;
+    top: -100%;
+    right: 0;
+    transform: translate(0, 3%);
+    z-index: 100;
+    transition: .5s ease;
+}
+
+.Prd_crt {
+    height: 90%;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.open_wind_cart {
+    top: 0;
+    right: 10px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 401px) {
+    .cart_products {
+        width: 370px;
+        width: 100vw;
+    }
+}
