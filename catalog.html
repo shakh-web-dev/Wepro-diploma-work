@@ -19,23 +19,51 @@
 </head>
 
 <body>
-
-    <div class="wrapper"></div>
+    <section class="catalog_container">
+        <div class="page_location">
+            <p>Главная</p>
+            <span>&gt;</span>
+            <p>Гидроциклы</p>
+        </div>
+        <h2 class="head_txt">Гидроциклы</h2>
+        <div class="sortProds">
+            <div class="leftSideSort">
+                <div class="tag">Полноприводные</div>
+                <div class="tag">от 5000</div>
+                <div class="tag">BRP</div>
+                <div class="tag">еще</div>
+            </div>
+            <div class="rightSideSort">
+                <select class="sortPopularProds">
+                    <option value="">По популярности</option>
+                    <option value="">По возрастанию</option>
+                    <option value="">По убыванию</option>
+                </select>
+                <div class="btnsSort">
+                    <div class="verticallySort"></div>
+                    <div class="cartSort"></div>
+                </div>
+            </div>
+        </div>
+        <div class="main_sectBlock"></div>
+    </section>
     <footer></footer>
+
+    <!-- Mobile -->
     <div class="open_mobile_menu"></div>
-    <div class="liked_prod">
+    <!-- <div class="liked_prod">
         <div class="Prd_lk">
             <div class="my_lk_prod"></div>
             <div class="my_lk_prod"></div>
             <div class="my_lk_prod"></div>
             <div class="my_lk_prod"></div>
         </div>
-    </div>
+    </div> -->
     <div class="cart_products"></div>
     <div class="bg_el"></div>
     <div class="bg_mobile_menu"></div>
-    
-    
+
+
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./JS/header.js"></script>

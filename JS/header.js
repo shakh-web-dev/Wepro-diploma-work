@@ -10,7 +10,7 @@ header.innerHTML = `
             <div class="logo"></div>
             <div class="addres">
                 <div class="loca_ic"></div>
-                <p>Москва, ул. Науки  25</p>
+                <a href="https://maps.google.com/">Москва, ул. Науки  25</a>
             </div>
             <div class="nav_buttons">
                 <div class="like_butt"></div>

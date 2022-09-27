@@ -166,6 +166,8 @@
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
         transition: .3s ease;
         z-index: 500;
+        overflow-y: scroll;
+        overflow-x: hidden;
     }
 
     .bg_mobile_menu {
@@ -186,5 +188,85 @@
 
     .open_mobile_menu.opened {
         left: 0;
+    }
+
+    .menu_btn {
+        width: 100%;
+        height: 55px;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        margin-left: 10px;
+        font-family: SF Pro Display;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        color: #2F3035;
+        cursor: pointer;
+    }
+
+    .menu_mob_chapter_img {
+        width: 20px;
+        height: 20px;
+        margin-right: 15px;
+    }
+
+    .menu_btn:nth-child(1) .menu_mob_chapter_img {
+        background: url(/svg/profile_icon.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .menu_btn:nth-child(2) .menu_mob_chapter_img {
+        background: url(/svg/profile_icon.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .menu_btn:nth-child(3) .menu_mob_chapter_img {
+        background: url(/svg/like.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .menu_btn:nth-child(4) .menu_mob_chapter_img {
+        background: url(/svg/cart.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .menu_btn:nth-child(5) .menu_mob_chapter_img {
+        background: url(/svg/home.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .menu_btn:nth-child(6) .menu_mob_chapter_img {
+        background: url(/svg/procent.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .menu_btn:nth-child(7) .menu_mob_chapter_img {
+        background: url(/svg/box.svg) no-repeat center;
+        background-size: contain;
+    }
+
+    .active_menu_btn {
+        font-weight: 600;
+    }
+
+    .mob_addres {
+        width: 100%;
+        height: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: SF Pro Display;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        letter-spacing: 0em;
+    }
+
+    .mob_addres a {
+        text-decoration: none;
+        width: 115px;
+        color: #2F3035;
     }
 }

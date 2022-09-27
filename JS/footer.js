@@ -87,7 +87,7 @@ bottomSide.onclick = () => {
 let form = document.forms.email
 const sendEmails = () => {
     let api = "http://localhost:3001/emails"
-    let randomID = (performance.now().toString(36)+Math.random().toString(36)).replace(/\./g,"")
+    let randomID = (performance.now().toString(36)+Math.random().toString(36)).replace(/\./g,"") // Random id
     form.onsubmit = (event) => {
         event.preventDefault()
         let email = {

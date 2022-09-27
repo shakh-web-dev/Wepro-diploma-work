@@ -38,6 +38,11 @@ header {
     line-height: 24px;
 }
 
+.addres a {
+    text-decoration: none;
+    color: #2F3035;
+}
+
 .buttons_links p {
     cursor: pointer;
 }

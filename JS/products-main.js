@@ -82,4 +82,5 @@ document.addEventListener("DOMContentLoaded", () => {
         cart_prod.classList.remove("open_wind_cart")
         closedBG()
     }
+
 })

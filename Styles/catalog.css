@@ -3,3 +3,111 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.catalog_container {
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 1170px;
+    height: 650px;
+    /* background-color: green; */
+}
+
+.page_location {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+    font-family: SF Pro Display;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #C4C4C4;
+}
+
+.head_txt {
+    margin-top: 50px;
+    width: fit-content;
+    font-family: SF Pro Display;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0em;
+}
+
+.sortProds {
+    width: 100%;
+    height: auto;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftSideSort {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+
+}
+
+.leftSideSort .tag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 6px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #F0F0F4;
+    color: #2F3035;
+    cursor: pointer;
+}
+
+.rightSideSort {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sortPopularProds {
+    width: 178px;
+    height: 33px;
+    border: 2px solid #D7D9DF;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.btnsSort {
+    width: 60px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verticallySort,
+.cartSort {
+    width: 25px;
+    height: 20px;
+    background-color: red;
+    cursor: pointer;
+}
+
+.verticallySort {
+    background: url(../svg/cart_sort.svg) no-repeat center;
+}
