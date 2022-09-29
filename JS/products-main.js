@@ -35,21 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     let cart_arr = []
     let liked_arr = []
 
-    let btnMobMenu = document.querySelector(".mobile_menu")
-    let opMobMenu = document.querySelector(".open_mobile_menu")
-    let bg_mobile_menu = document.querySelector(".bg_mobile_menu")
+
     let bgEl = document.querySelector(".bg_el")
     let exs = document.querySelector(".exs")
-    btnMobMenu.onclick = () => {
-        opMobMenu.classList.add("opened")
-        bg_mobile_menu.classList.add("actived_bg")
-        document.body.style.overflow = "hidden"
-    }
-    bg_mobile_menu.onclick = () => {
-        opMobMenu.classList.remove("opened")
-        bg_mobile_menu.classList.remove("actived_bg")
-        document.body.style.overflowY = "scroll"
-    }
 
     function closedBG() {
         bgEl.style = "display: none;"

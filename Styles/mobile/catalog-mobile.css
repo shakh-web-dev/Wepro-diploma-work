@@ -1,5 +1,10 @@
 @media screen and (max-width: 401px) {
+    .mobile_navigation {
+        display: none;
+    }
+    
     .catalog_container {
         width: 375px;
+        padding-top: 25px;
     }
 }

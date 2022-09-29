@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="./Styles/cart.css">
     <link rel="stylesheet" href="./Styles/components/footer.css">
     <link rel="stylesheet" href="./Styles/mobile/footer-mobile.css">
+    <link rel="stylesheet" href="./Styles/mobile/navbar.css">
     <link rel="stylesheet" href="./Styles/fonts.css">
     <title>Drive Moto</title>
 </head>
@@ -40,12 +41,69 @@
                     <option value="">По убыванию</option>
                 </select>
                 <div class="btnsSort">
-                    <div class="verticallySort"></div>
-                    <div class="cartSort"></div>
+                    <div class="grid_sort active_sort"></div>
+                    <div class="list_sort"></div>
                 </div>
             </div>
         </div>
-        <div class="main_sectBlock"></div>
+        <div class="main_sectBlock">
+            <div class="sort_filter">
+                <div class="coise_sort">
+                    <div class="sort_tab active_sort_tab">ПАРАМЕТРЫ</div>
+                    <div class="sort_tab">ПО МАРКЕ</div>
+                </div>
+                <div class="checkboxes">
+                    <div class="check_x"><span></span>Наличие</div>
+                    <div class="checks_1">
+                        <div class="checking">
+                            <input type="checkbox" id="check1">
+                            <label for="check1">В наличие</label>
+                        </div>
+                        <div class="checking">
+                            <input type="checkbox" id="check2">
+                            <label for="check2">Под заказ</label>
+                        </div>
+                    </div>
+                    <div class="check_x"><span></span>Новинки</div>
+                    <div class="checks_2">
+                        <div class="checking">
+                            <input type="checkbox" id="check3">
+                            <label for="check3">Все</label>
+                        </div>
+                        <div class="checking">
+                            <input type="checkbox" id="check4">
+                            <label for="check4">Новинки</label>
+                        </div>
+                        <div class="checking">
+                            <input type="checkbox" id="check5">
+                            <label for="check5">Акции</label>
+                        </div>
+                    </div>
+                    <div class="sortForPrice"><span></span>Цена</div>
+                    <div class="rangesPrice">
+                        <div class="rangeslider">
+                            <input class="min" name="range_1" type="range" min="1" max="100" value="10" />
+                            <input class="max" name="range_1" type="range" min="1" max="100" value="90" />
+                            <span>от</span>
+                            <span class="range_min light left">1 000 000</span>
+                            <span>до</span>
+                            <span class="range_max light right">5 000 000</span>
+                        </div>
+                    </div>
+                    <div class="characteristics"></div>
+                </div>
+            </div>
+            <div class="products_area">
+                <div class="moto_product"></div>
+            </div>
+        </div>
+        <div class="pagination">
+            <div class="pag"></div>
+            <div class="pag"></div>
+            <div class="pag"></div>
+            <div class="pag"></div>
+            <div class="pag"></div>
+        </div>
     </section>
     <footer></footer>
 
@@ -66,9 +124,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="./JS/header.js"></script>
     <script type="module" src="./JS/catalog.js"></script>
+    <script src="./JS/range.js"></script>
     <script src="./JS/footer.js"></script>
+    <script type="module" src="./JS/navbar.js"></script>
 </body>
 
 </html>

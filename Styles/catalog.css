@@ -8,7 +8,7 @@
     margin: 0 auto;
     padding-top: 50px;
     width: 1170px;
-    height: 650px;
+    height: auto;
     /* background-color: green; */
 }
 
@@ -68,6 +68,7 @@
     background-color: #F0F0F4;
     color: #2F3035;
     cursor: pointer;
+    border-radius: 3px;
 }
 
 .rightSideSort {
@@ -100,14 +101,282 @@
     justify-content: space-between;
 }
 
-.verticallySort,
-.cartSort {
+.grid_sort,
+.list_sort {
     width: 25px;
     height: 20px;
     background-color: red;
     cursor: pointer;
 }
 
-.verticallySort {
-    background: url(../svg/cart_sort.svg) no-repeat center;
+.grid_sort {
+    background: url(../svg/grid_sort.svg) no-repeat center;
+    background-size: contain;
+    filter: invert(75%);
+}
+
+.list_sort {
+    background: url(../svg/list_sort.svg) no-repeat center;
+    background-size: 120%;
+    filter: invert(75%);
+}
+
+.active_sort {
+    filter: invert(0%);
+}
+
+.main_sectBlock {
+    margin: 35px auto;
+    display: flex;
+    align-items: center;
+    width: 1170px;
+    height: 600px;
+}
+
+.sort_filter {
+    width: 25%;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.coise_sort {
+    width: 85%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort_tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    height: 35px;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    color: #C4C4C4;
+    cursor: pointer;
+}
+
+.sort_tab.active_sort_tab {
+    border-bottom: 2px solid #1C62CD;
+    color: #2F3035;
+}
+
+.checkboxes {
+    width: 90%;
+    height: 150px;
+}
+
+.check_x {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    width: 86px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.sortForPrice {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 60px;
+    font-family: SF Pro Display;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 0em;
+    cursor: pointer;
+}
+
+.check_x span,
+.sortForPrice span {
+    width: 15px;
+    height: 10px;
+    background: url(../svg/open_down.svg) no-repeat center;
+    background-size: contain;
+    transform: rotate(180deg);
+}
+
+.checks_1,
+.checks_2 {
+    width: 90%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: SF Pro Display;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+}
+
+.checking {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.rangesPrice {
+    margin-top: 10px;
+    width: 95%;
+    height: 50px;
+}
+
+/* Range, Ползунок */
+
+input[type='range'] {
+    width: 230px;
+    height: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type='range'],
+input[type='range']::-webkit-slider-runnable-track,
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+    width: 200px;
+    height: 2px;
+    background: #1C62CD;
+}
+
+input[type='range']:nth-child(2)::-webkit-slider-runnable-track {
+    background: none;
+}
+
+input[type='range']::-webkit-slider-thumb {
+    position: relative;
+    height: 13px;
+    width: 13px;
+    margin-top: -6px;
+    background: #1C62CD;
+    border: 1px solid #1C62CD;
+    border-radius: 25px;
+    z-index: 1;
+}
+
+
+input[type='range']:nth-child(1)::-webkit-slider-thumb {
+    z-index: 2;
+}
+
+.rangeslider {
+    position: relative;
+    height: 60px;
+    width: 210px;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+.rangeslider input {
+    position: absolute;
+}
+
+.rangeslider {
+    position: absolute;
+}
+
+.rangeslider span {
+    position: absolute;
+    margin-top: 30px;
+    left: 0;
+}
+
+.rangeslider .right {
+    position: relative;
+    float: right;
+    margin-right: -5px;
+}
+
+
+/* Proof of concept for Firefox */
+@-moz-document url-prefix() {
+    .rangeslider::before {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #003D7C;
+        display: block;
+        position: relative;
+        top: 16px;
+    }
+
+    input[type='range']:nth-child(1) {
+        position: absolute;
+        top: 35px !important;
+        overflow: visible !important;
+        height: 0;
+    }
+
+    input[type='range']:nth-child(2) {
+        position: absolute;
+        top: 35px !important;
+        overflow: visible !important;
+        height: 0;
+    }
+
+    input[type='range']::-moz-range-thumb {
+        position: relative;
+        height: 15px;
+        width: 15px;
+        margin-top: -7px;
+        background: #fff;
+        border: 1px solid #003D7C;
+        border-radius: 25px;
+        z-index: 1;
+    }
+
+    input[type='range']:nth-child(1)::-moz-range-thumb {
+        transform: translateY(-20px);
+    }
+
+    input[type='range']:nth-child(2)::-moz-range-thumb {
+        transform: translateY(-20px);
+    }
+}
+
+.characteristics {}
+
+.products_area {
+    width: 75%;
+    height: 100%;
+    padding-left: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 100px));
+    grid-auto-rows: 403px;
+}
+
+.moto_product {
+    /* width: 270px;
+    height: 403px; */
+    position: relative;
+    border: 1px solid #CDCDCD;
+    border-radius: 3px;
+    transition: .3s ease;
+    cursor: pointer;
+
+}
+
+.open_mobile_menu {
+    display: none;
 }
